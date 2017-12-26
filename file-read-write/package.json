@@ -1,0 +1,14 @@
+{
+  "name": "cook-book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hidai",
+  "license": "ISC",
+  "dependencies": {
+    "strip-bytes-stream": "^1.1.0"
+  }
+}
