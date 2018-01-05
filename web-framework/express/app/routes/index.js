@@ -1,6 +1,6 @@
-const {Router} = require('express');
-const router = Router();
+const router = require('express').Router();
 
+// Content-Type: text/html; charset=utf-8
 router.get('/', function(req, res) {
     const title = 'Express'
     res.send(`
@@ -15,6 +15,16 @@ router.get('/', function(req, res) {
             </body>
         </html>
     `);
+});
+
+// Content-Type: text/html; charset=utf-8
+router.post('/', (req, res) => {
+    res.send("you send post.\n");
+});
+
+// Content-Type: application/json; charset=utf-8
+router.post('/message.json', (req, res) => {
+    res.send({ message: "you send post.\n"});
 });
 
 module.exports = router;
